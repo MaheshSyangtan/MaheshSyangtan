@@ -39,9 +39,6 @@ nav a::after {
 }
 nav a:hover { color: var(--red); }
 nav a:hover::after { transform: scaleX(1) rotate(-0.5deg); }
-/* FIX: active state now controlled by CSS class toggled by JS (not inline style)
-   — avoids race condition where multiple sections firing simultaneously
-   would cause the last one to win unpredictably */
 nav a.nav-active { color: var(--red); }
 
 /* ── FOOTER ── */
