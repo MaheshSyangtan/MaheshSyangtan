@@ -68,3 +68,12 @@ footer strong { color: var(--red); }
   
   nav .nav-logo { flex: 0 0 auto; padding-right: 12px; border-right: 1.5px dashed rgba(26,10,10,0.1); }
 }
+
+/* Landscape Variables Fix */
+@media (max-height: 500px) and (orientation: landscape) {
+  section { padding: 32px 0; }
+  nav { padding: 4px 0; }
+  nav .container { gap: 16px; }
+  nav .nav-logo { font-size: 1.1rem; }
+  nav a { font-size: 0.95rem; }
+}
