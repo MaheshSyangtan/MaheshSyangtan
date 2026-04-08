@@ -39,9 +39,6 @@ nav a::after {
 }
 nav a:hover { color: var(--red); }
 nav a:hover::after { transform: scaleX(1) rotate(-0.5deg); }
-/* FIX: active state now controlled by CSS class toggled by JS (not inline style)
-   — avoids race condition where multiple sections firing simultaneously
-   would cause the last one to win unpredictably */
 nav a.nav-active { color: var(--red); }
 
 /* ── FOOTER ── */
@@ -70,4 +67,13 @@ footer strong { color: var(--red); }
   nav .container { -ms-overflow-style: none; scrollbar-width: none; }
   
   nav .nav-logo { flex: 0 0 auto; padding-right: 12px; border-right: 1.5px dashed rgba(26,10,10,0.1); }
+}
+
+/* Landscape Variables Fix */
+@media (max-height: 500px) and (orientation: landscape) {
+  section { padding: 32px 0; }
+  nav { padding: 4px 0; }
+  nav .container { gap: 16px; }
+  nav .nav-logo { font-size: 1.1rem; }
+  nav a { font-size: 0.95rem; }
 }

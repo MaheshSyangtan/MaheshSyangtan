@@ -27,7 +27,7 @@
 <!-- ── HERO ── -->
 <section id="hero">
   <div class="container" style="position:relative">
-    <svg style="position:absolute;right:0;top:0;width:130px;height:130px;opacity:0.07;pointer-events:none" viewBox="0 0 130 130">
+    <svg aria-hidden="true" style="position:absolute;right:0;top:0;width:130px;height:130px;opacity:0.07;pointer-events:none" viewBox="0 0 130 130">
       <circle cx="65" cy="65" r="58" stroke="#d91a1a" stroke-width="7" stroke-dasharray="11 5" fill="none"/>
       <circle cx="65" cy="65" r="38" stroke="#1a0a0a" stroke-width="3.5" stroke-dasharray="7 4" fill="none"/>
       <circle cx="65" cy="65" r="16" stroke="#d91a1a" stroke-width="4" fill="none"/>
@@ -38,7 +38,8 @@
     <span class="hero-tag">// operator.init()</span>
     <h1 class="hero-name">Mahesh<br><span>Syangtan</span></h1>
     <p class="hero-role">
-      <span class="typed-text" id="typed"></span><span class="hero-cursor" id="cursor">|</span>
+      <span class="typed-text" id="typed" aria-hidden="true"></span><span class="hero-cursor" id="cursor" aria-hidden="true">|</span>
+      <span class="sr-only">Cybersecurity Student, Web Developer, Networking Enthusiast</span>
     </p>
     <blockquote class="hero-mission">
       To learn, protect, and innovate in the digital space.
@@ -55,7 +56,7 @@
 </section>
 
 <div class="container">
-  <svg class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
+  <svg aria-hidden="true" class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
     <path d="M0,12 C50,4 100,20 150,12 C200,4 250,20 300,12 C350,4 400,20 450,12 C500,4 550,20 600,12 C650,4 700,20 750,12 C780,6 800,14 800,12"
       stroke="#d91a1a" stroke-width="2.5" fill="none" stroke-linecap="round"
       stroke-dasharray="820" stroke-dashoffset="820"
@@ -69,23 +70,23 @@
     <h2 class="section-heading reveal">// About Me</h2>
     <div class="about-grid">
       <div class="yaml-card reveal reveal-delay-1">
-        <div><span class="yaml-com"># operator.profile</span></div>
-        <div><span class="yaml-key">Operator:</span></div>
-        <div>&nbsp; <span class="yaml-key">Name:</span> <span class="yaml-str">"Mahesh Syangtan"</span></div>
-        <div>&nbsp; <span class="yaml-key">Alias:</span> <span class="yaml-str">"@maheshsyangtan"</span></div>
-        <div>&nbsp; <span class="yaml-key">Location:</span> <span class="yaml-str">"Nepal"</span></div>
-        <div>&nbsp; <span class="yaml-key">Role:</span> <span class="yaml-str">"Cybersecurity Student"</span></div>
-        <br>
-        <div><span class="yaml-key">Skills:</span></div>
-        <div>&nbsp; <span class="yaml-list">- Basic C++</span></div>
-        <div>&nbsp; <span class="yaml-list">- HTML / CSS</span></div>
-        <div>&nbsp; <span class="yaml-list">- Cyber Security Fundamentals</span></div>
-        <div>&nbsp; <span class="yaml-list">- Networking</span></div>
-        <br>
-        <div><span class="yaml-key">Hobbies:</span></div>
-        <div>&nbsp; <span class="yaml-list">- Drawing &amp; Sketching</span></div>
-        <div>&nbsp; <span class="yaml-list">- Driving (Cars &amp; Bikes)</span></div>
-        <div>&nbsp; <span class="yaml-list">- Coffee / Barista Trained</span></div>
+<pre><code><span class="yaml-com"># operator.profile</span>
+<span class="yaml-key">Operator:</span>
+&nbsp; <span class="yaml-key">Name:</span> <span class="yaml-str">"Mahesh Syangtan"</span>
+&nbsp; <span class="yaml-key">Alias:</span> <span class="yaml-str">"@maheshsyangtan"</span>
+&nbsp; <span class="yaml-key">Location:</span> <span class="yaml-str">"Nepal"</span>
+&nbsp; <span class="yaml-key">Role:</span> <span class="yaml-str">"Cybersecurity Student"</span>
+
+<span class="yaml-key">Skills:</span>
+&nbsp; <span class="yaml-list">- Basic C++</span>
+&nbsp; <span class="yaml-list">- HTML / CSS</span>
+&nbsp; <span class="yaml-list">- Cyber Security Fundamentals</span>
+&nbsp; <span class="yaml-list">- Networking</span>
+
+<span class="yaml-key">Hobbies:</span>
+&nbsp; <span class="yaml-list">- Drawing &amp; Sketching</span>
+&nbsp; <span class="yaml-list">- Driving (Cars &amp; Bikes)</span>
+&nbsp; <span class="yaml-list">- Coffee / Barista Trained</span></code></pre>
       </div>
 
       <div class="about-notes reveal reveal-delay-2">
@@ -176,7 +177,7 @@
 </section>
 
 <div class="container">
-  <svg class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
+  <svg aria-hidden="true" class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
     <path d="M0,12 C40,18 80,6 120,12 C160,18 200,6 240,12 C280,18 320,6 360,12 C400,18 440,6 480,12 C520,18 560,6 600,12 C640,18 680,6 720,12 C760,18 790,8 800,12"
       stroke="rgba(26,10,10,0.18)" stroke-width="2" fill="none" stroke-linecap="round"/>
   </svg>
@@ -295,7 +296,7 @@
 </section>
 
 <div class="container">
-  <svg class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
+  <svg aria-hidden="true" class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
     <path d="M0,12 C50,4 100,20 150,12 C200,4 250,20 300,12 C350,4 400,20 450,12 C500,4 550,20 600,12 C650,4 700,20 750,12 C780,6 800,14 800,12"
       stroke="rgba(26,10,10,0.18)" stroke-width="2" fill="none" stroke-linecap="round"/>
   </svg>
@@ -365,7 +366,7 @@
 </section>
 
 <div class="container">
-  <svg class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
+  <svg aria-hidden="true" class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
     <path d="M0,12 C40,18 80,6 120,12 C160,18 200,6 240,12 C280,18 320,6 360,12 C400,18 440,6 480,12 C520,18 560,6 600,12 C640,18 680,6 720,12 C760,18 790,8 800,12"
       stroke="rgba(26,10,10,0.18)" stroke-width="2" fill="none" stroke-linecap="round"/>
   </svg>
@@ -408,7 +409,7 @@
 </section>
 
 <div class="container">
-  <svg class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
+  <svg aria-hidden="true" class="squiggle" viewBox="0 0 800 24" preserveAspectRatio="none">
     <path d="M0,12 C50,4 100,20 150,12 C200,4 250,20 300,12 C350,4 400,20 450,12 C500,4 550,20 600,12 C650,4 700,20 750,12 C780,6 800,14 800,12"
       stroke="rgba(26,10,10,0.18)" stroke-width="2" fill="none" stroke-linecap="round"/>
   </svg>
@@ -443,7 +444,7 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="container">
-    <svg class="squiggle" style="margin-bottom:16px" viewBox="0 0 800 24" preserveAspectRatio="none">
+    <svg aria-hidden="true" class="squiggle" style="margin-bottom:16px" viewBox="0 0 800 24" preserveAspectRatio="none">
       <path d="M0,12 C50,4 100,20 150,12 C200,4 250,20 300,12 C350,4 400,20 450,12 C500,4 550,20 600,12 C650,4 700,20 750,12 C780,6 800,14 800,12"
         stroke="#d91a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
     </svg>
